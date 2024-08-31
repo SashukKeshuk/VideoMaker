@@ -1,14 +1,13 @@
 # Video Maker Bot
 
-Это телеграм бот, в котором можно создать видео просто введя тему видео, выбрав язык и продолжительность. Бот по запросу с помощью нейросетей по api создаст видео по заданной теме с помощью нейросетей
-ChatGPT4 - текст сценария видео на выбранно языке по теме для видео  -  Есть API
-ElevenLabs - многоязычная нейросеть озвучивающая текст (созданный в GPT сценарий)  -  Есть API
-Pictory AI - нейросеть, подбирающая по тексту сценария подходящие видеоассоциации и собирающая эо в видеоряд  -  Нету API => нейросеть парсится
+Telegram bot where you can create a video simply by entering a video topic, choosing a language, and specifying the duration. Upon request, the bot will use APIs to generate a video on the given topic using neural networks:
 
-После того как бот получит по запросу все эти ресурсы, он наложит аудио на видеоряд, скоррекстировав все по длинне и громкости автоматически, добавит водяной знак и отправит пользователю в чат в качестве ответа на его запрос с темой.
-После пользователь может выбрать соц сеть / платформу из базы данных бота, в которую бот опубликует видео (на данный момент поддерживаются youtube, instagram и tiktok).
-В текущей версии бот поддерживает 6 языков - английский, русский, испанский, индийский и арабский.
-Пример созданного ботом видео - example.mp4
-Скриншоты взаимодействия пользователя с ботом - scr1/2.../.png
+**ChatGPT-4 API:** Generates the video script in the selected language based on the provided topic.
+**ElevenLabs API:** A multilingual neural network that voices the text (the script created in GPT).
+**Pictory AI API:** A neural network that selects suitable video clips based on the script and assembles them into a video sequence.
+**No API Available:** The neural network is parsed.
+Once the bot retrieves all these resources, it will overlay the audio onto the video sequence, automatically adjusting for length and volume, add a watermark, and send the video to the user in the chat as a response to their topic request. The user can then choose a social network/platform from the bot's database where the bot will publish the video (currently supported platforms are YouTube, Instagram, and TikTok). The current version of the bot supports 6 languages: English, Russian, Spanish, Hindi, and Arabic.
 
-В дальнейшем планируется внедрение бота в сферы производств и последующая его коммерциализация.
+An example of a video created by the bot: example.mp4 Screenshots of user interactions with the bot: *scr1/2.../.png*
+
+In the future, it is planned to integrate the bot into production sectors and subsequently commercialize it.
